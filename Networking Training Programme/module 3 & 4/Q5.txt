@@ -1,0 +1,11 @@
+LINUX KERNEL - ETHERNET DEVICES and NETWORK INTERFACES
+
+The Linux kernel efficiently manages Ethernet communication by handling network interfaces, interacting with device drivers, and processing network packets. Below is an overview of how the Linux kernel supports Ethernet communication.The Linux kernel detects Ethernet devices as network interfaces. It uses device drivers to communicate with Network Interface Cards (NICs). The kernel dynamically loads the correct driver module for the NIC.
+
+List the drivers : lsmod
+Load a driver: insmod [].ko
+Unload a driver: rmmod 
+
+When an application sends data, the kernel processes it through the OSI model layers. The Transport Layer (TCP/UDP) hands the data to the Network Layer (IP). The Data Link Layer (Ethernet Layer) adds the MAC address and sends it to the NIC.
+
+The Linux networking stack implements protocols like TCP/IP, ARP, and ICMP. The kernel uses the netfilter framework (iptables) to filter and manage packets. Routing is handled by the IP routing table, which directs packets to the correct interface.

@@ -1,0 +1,2 @@
+ARP SPOOFING:
+ARP spoofing (or ARP poisoning) is a Man-in-the-Middle (MITM) attack where a malicious actor sends fake ARP replies to associate their MAC address with the IP address of another device (e.g., the default gateway). This allows the attacker to intercept, modify, or block network traffic. It is always a good practice to manually assign MAC addresses to prevent ARP poisoning and regularly check for suspicious MAC-IP mappings.

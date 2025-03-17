@@ -1,0 +1,58 @@
+PS C:\Users\Linghesh> nslookup www.google.com
+Server:  reliance.reliance
+Address:  2405:201:e009:40bc::c0a8:1d01
+
+Non-authoritative answer:
+Name:    www.google.com
+Addresses:  2404:6800:4009:829::2004
+          142.250.183.100
+
+PS C:\Users\Linghesh> nslookup www.facebook.com
+Server:  reliance.reliance
+Address:  2405:201:e009:40bc::c0a8:1d01
+
+Non-authoritative answer:
+Name:    star-mini.c10r.facebook.com
+Addresses:  2a03:2880:f34e:1:face:b00c:0:25de
+          57.144.156.1
+Aliases:  www.facebook.com
+
+PS C:\Users\Linghesh> nslookup www.amazon.com
+Server:  reliance.reliance
+Address:  2405:201:e009:40bc::c0a8:1d01
+
+Non-authoritative answer:
+Name:    d3ag4hukkh62yn.cloudfront.net
+Addresses:  2600:9000:2241:8200:7:49a5:5fd4:b121
+          2600:9000:2241:9c00:7:49a5:5fd4:b121
+          2600:9000:2241:a200:7:49a5:5fd4:b121
+          2600:9000:2241:8a00:7:49a5:5fd4:b121
+          2600:9000:2241:1800:7:49a5:5fd4:b121
+          2600:9000:2241:5a00:7:49a5:5fd4:b121
+          2600:9000:2241:5800:7:49a5:5fd4:b121
+          2600:9000:2241:3200:7:49a5:5fd4:b121
+          162.219.225.118
+Aliases:  www.amazon.com
+          tp.47cf2c8c9-frontier.amazon.com
+
+PS C:\Users\Linghesh> nslookup github.com
+Server:  reliance.reliance
+Address:  2405:201:e009:40bc::c0a8:1d01
+
+Non-authoritative answer:
+Name:    github.com
+Address:  20.207.73.82
+
+PS C:\Users\Linghesh> nslookup www.cisco.com
+Server:  reliance.reliance
+Address:  2405:201:e009:40bc::c0a8:1d01
+
+Non-authoritative answer:
+Name:    e2867.dsca.akamaiedge.net
+Addresses:  2600:140f:400:180::b33
+          2600:140f:400:186::b33
+          23.213.214.90
+Aliases:  www.cisco.com
+          www.cisco.com.akadns.net
+          wwwds.cisco.com.edgekey.net
+          wwwds.cisco.com.edgekey.net.globalredir.akadns.net

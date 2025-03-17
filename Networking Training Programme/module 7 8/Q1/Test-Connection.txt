@@ -1,0 +1,55 @@
+PS C:\Users\Linghesh> Test-Connection www.google.com -Count 4
+
+Source        Destination     IPV4Address      IPV6Addres
+                                               s
+------        -----------     -----------      ----------
+LAPTOP-L27... www.google.com  142.250.77.196   2404:68...
+LAPTOP-L27... www.google.com  142.250.77.196   2404:68...
+LAPTOP-L27... www.google.com  142.250.77.196   2404:68...
+LAPTOP-L27... www.google.com  142.250.77.196   2404:68...
+
+
+PS C:\Users\Linghesh> Test-Connection www.facebook.com -Count 4
+
+Source        Destination     IPV4Address      IPV6Addres
+                                               s
+------        -----------     -----------      ----------
+LAPTOP-L27... www.facebook... 57.144.146.1     2a03:28...
+LAPTOP-L27... www.facebook... 57.144.146.1     2a03:28...
+LAPTOP-L27... www.facebook... 57.144.146.1     2a03:28...
+LAPTOP-L27... www.facebook... 57.144.146.1     2a03:28...
+
+PS C:\Users\Linghesh> Test-Connection www.amazon.com -Count 4
+
+Source        Destination     IPV4Address      IPV6Addres
+                                               s
+------        -----------     -----------      ----------
+LAPTOP-L27... www.amazon.com  18.67.156.60     2600:90...
+LAPTOP-L27... www.amazon.com  18.67.156.60     2600:90...
+LAPTOP-L27... www.amazon.com  18.67.156.60     2600:90...
+LAPTOP-L27... www.amazon.com  18.67.156.60     2600:90...
+
+
+PS C:\Users\Linghesh> Test-Connection www.github.com -Count 4
+
+Source        Destination     IPV4Address      IPV6Addres
+                                               s
+------        -----------     -----------      ----------
+LAPTOP-L27... www.github.com  20.207.73.82
+LAPTOP-L27... www.github.com  20.207.73.82
+LAPTOP-L27... www.github.com  20.207.73.82
+LAPTOP-L27... www.github.com  20.207.73.82
+
+
+PS C:\Users\Linghesh> Test-Connection www.cisco.com -Count 4
+
+Source        Destination     IPV4Address      IPV6Addres
+                                               s
+------        -----------     -----------      ----------
+LAPTOP-L27... www.cisco.com   23.209.254.61    2600:14...
+LAPTOP-L27... www.cisco.com   23.213.214.90    2600:14...
+LAPTOP-L27... www.cisco.com   23.213.214.90    2600:14...
+LAPTOP-L27... www.cisco.com   23.213.214.90    2600:14...
+
+
+PS C:\Users\Linghesh>

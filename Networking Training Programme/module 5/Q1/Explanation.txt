@@ -1,0 +1,7 @@
+ARP:
+The Address Resolution Protocol (ARP) is a network protocol used to map an IP address to a corresponding MAC address within a local network. It operates at the Data Link Layer (Layer 2) and is essential for communication between devices in an Ethernet network.
+
+Steps performed:
+An ARP request is broadcasted when a device wants to find the MAC address of a device with a known IP address. The sender device (who is making the request) provides its own IP and MAC address in the packet. The sender sets the target MAC address as 00:00:00:00:00:00 (unknown) because it is requesting this information.
+
+When the target device receives the ARP request, it responds with an ARP reply, providing its MAC address. The sender of the ARP reply (the device that owns the target IP) sends its own MAC address to the requester. The destination device updates its ARP cache with this information.

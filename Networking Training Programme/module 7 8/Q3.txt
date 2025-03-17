@@ -1,0 +1,26 @@
+TRACEROUTE:
+traceroute is used to track the path that packets take to reach a destination. It helps diagnose network issues and measure latency between hops.
+
+Options:
+-n : IP address only
+-w : set wait time for a response per hop
+-q : set the no. of probes per hop
+-m : set maximum no. of hops
+
+Example: traceroute -n -w 2 -q 5 -m 28 www.google.com
+
+traceroute to www.google.com (142.250.196.68), 28 hops max, 60 byte packets
+ 1  192.168.29.1  3.968 ms  3.044 ms  1.822 ms  2.358 ms  2.296 ms
+ 2  10.34.112.1  8.135 ms  7.833 ms  7.532 ms  5.807 ms  5.499 ms
+ 3  172.31.0.144  12.568 ms 172.31.0.209  12.254 ms 172.31.0.144  9.980 ms 172.31.0.209  9.690 ms  9.418 ms
+ 4  192.168.68.148  13.952 ms  12.702 ms 192.168.68.142  7.282 ms 192.168.68.144  11.210 ms 192.168.68.146  10.281 ms
+ 5  172.26.77.166  9.807 ms  9.390 ms  8.989 ms  11.421 ms  10.984 ms
+ 6  172.26.77.131  10.543 ms 172.26.77.130  10.227 ms  9.986 ms 172.26.77.131  9.481 ms 172.26.77.130  8.810 ms
+ 7  192.168.68.134  7.016 ms 192.168.68.130  10.732 ms 192.168.68.132  10.276 ms 192.168.68.130  9.935 ms 192.168.68.132  9.724 ms
+ 8  * * * * *
+ 9  * * * * *
+10  * * 72.14.217.254  12.130 ms * *
+11  * * * * *
+12  142.250.228.186  9.282 ms 142.251.55.228  8.821 ms 142.251.55.68  16.713 ms 142.251.55.206  16.097 ms 142.251.55.88  11.374 ms
+13  172.253.71.132  10.821 ms 142.251.230.90  14.124 ms 172.253.75.14  13.461 ms 142.251.229.250  13.135 ms 142.251.230.70  12.831 ms
+14  142.250.196.68  12.397 ms  12.464 ms  11.305 ms 142.250.208.231  10.391 ms 142.250.196.68  9.361 ms

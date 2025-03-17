@@ -1,0 +1,14 @@
+1. SSH (Secure Shell)
+SSH is a secure network protocol used for remote login and command execution over an encrypted connection. It prevents eavesdropping and attacks by encrypting all transmitted data. Port: 22
+Steps:
+The client sends a connection request to the SSH server.
+The server responds with a key exchange for encryption.
+The client authenticates using a password or SSH key.
+Once authenticated, the user gets a secure shell session to execute commands remotely.
+
+2. Telnet (Teletype Network)
+Telnet is an older protocol used for remote access, but it lacks encryption, making it vulnerable to security threats. Port: 23
+Steps:
+The client initiates a plain-text connection to the Telnet server.
+The server prompts for login credentials.
+After authentication, the user gets a command-line session on the remote machine.

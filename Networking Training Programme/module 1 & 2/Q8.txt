@@ -1,0 +1,36 @@
+IFCONFIG: ifconfig helps us in understanding all the network interfaces available in the system. It is mostly used to fetch the IP address to the current system. Similarly, iwconfig is used to identify the wireless network interfaces.
+
+Example:
+lingh@lingh-VirtualBox:~$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.29.90  netmask 255.255.255.0  broadcast 192.168.29.255
+        inet6 2405:201:e009:40bc:1a19:f37b:e981:8820  prefixlen 64  scopeid 0x0<global>
+        inet6 2405:201:e009:40bc:92ec:7a08:6f1c:79c3  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::58f4:5ba9:a700:5fa4  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:52:1d:4a  txqueuelen 1000  (Ethernet)
+        RX packets 84661  bytes 116041398 (116.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 21795  bytes 2873736 (2.8 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 1076  bytes 125884 (125.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1076  bytes 125884 (125.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+PARAMS:
+MTU (Maximum Transmission Unit) → The largest packet size (in bytes) that can be transmitted. Default is 1500 bytes for Ethernet.
+RX (Received) → Packets & bytes received by the interface.
+TX (Transmitted) → Packets & bytes sent from the interface.
+These indicate the state and capabilities of the network interface:
+FLAGS:
+UP → The interface is active.
+BROADCAST → Supports broadcasting.
+MULTICAST → Supports multicast networking.
+enp0s3 → Ethernet adapter (physical or virtual).
+lo → Loopback interface (used for internal communication).

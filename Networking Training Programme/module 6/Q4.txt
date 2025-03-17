@@ -1,0 +1,13 @@
+An IP address is considered private if it belongs to specific ranges that are reserved for internal use within networks and cannot be routed on the public internet. These private IP addresses are used in homes, offices, and enterprises to allow multiple devices to communicate within a local network (LAN) without using public IP addresses.
+
+     Private IP Range	           Subnet Mask	              Usage
+10.0.0.0 – 10.255.255.255	255.0.0.0 (/8)	        Large organizations
+172.16.0.0 – 172.31.255.255	255.240.0.0 (/12)	Medium-sized networks
+192.168.0.0 – 192.168.255.255	255.255.0.0 (/16)	Small/home networks
+
+1) 192.168.10.5 - Private - Class C
+2) 172.20.15.1  - Private - Class B
+3) 8.8.8.8      - Public  - Class A
+
+Network Address Translation (NAT) is a process used to map private IP addresses (used within a local network) to a public IP address (used on the internet). This allows devices with private IPs to communicate over the internet without needing a unique public IP for each device.
+Ex.: 192.168.1.10 -> 203.0.113.5
