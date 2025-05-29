@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <string.h>
+
+#define DAYS 7
+#define MAX_TASKS 3
+#define MAX_LEN 100
+
+struct Day {
+    char name[10];
+    char tasks[MAX_TASKS][MAX_LEN];
+    int taskCount;
+};
+
+void removeNewline(char *str) {
+    for (int i = 0; str[i]; i++) {
+        if (str[i] == '\n') {
+            str[i] = '\0';
+            break;
+        }
+    }
+}
+
+int main() {
+    struct Day week[DAYS] = {
+        {"Monday", {}, 0}, {"Tuesday", {}, 0}, {"Wednesday", {}, 0},
+        {"Thursday", {}, 0}, {"Friday", {}, 0}, {"Saturday", {}, 0},
+        {"Sunday", {}, 0}
+    };
+
+    int n;
+    printf("Enter number of tasks to add: ");
+    scanf("%d", &n);
+    getchar();
+
+    for (int i = 0; i < n; i++) {
+        char day[10], task[MAX_LEN];
+        printf("Enter day (e.g., Monday): ");
+        fgets(day, sizeof(day), stdin);
+        removeNewline(day);
+
+        printf("Enter task: ");
+        fgets(task, sizeof(task), stdin);
+        removeNewline(task);
+
+        for (int j = 0; j < DAYS; j++) {
+            if (strcmp(day, week[j].name) == 0 && week[j].taskCount < MAX_TASKS) {
+                strcpy(week[j].tasks[week[j].taskCount++], task);
+                break;
+            }
+        }
+    }
+
+    printf("\nWeekly Tasks:\n");
+    for (int i = 0; i < DAYS; i++) {
+        printf("%s:\n", week[i].name);
+        for (int j = 0; j < week[i].taskCount; j++) {
+            printf("  - %s\n", week[i].tasks[j]);
+        }
+    }
+
+    return 0;
+}
